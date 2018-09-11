@@ -1,0 +1,168 @@
+<!-- <h1 [ngStyle]="{'text-align':'center','color':'red'}">
+  Attribute directive works!
+</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" [ngStyle]="{'border':'1px solid black'}">
+  <p [ngClass]="{'alert':true, 'alert-info':true}">Attribute Directive</p>
+  <p [ngStyle]="{'border':'1px solid red','height':'100px' }">Attribute Directive</p>
+  <h1 [ngStyle]=" {'color':'blue'} " >SARA</h1>
+  </div>   
+  
+  <div class="col-md-4" [ngStyle]="{'border':'1px solid black'}">
+    <p [ngClass]="{'alert':true, 'alert-info':true}">Attribute Directive</p>
+    <p [ngStyle]="{'border':'1px solid red','height':'100px' }">Attribute Directive</p>
+    <h1 [ngStyle]=" {'color':'blue'} " >SARA</h1>
+    </div> 
+
+
+  <div class="col-md-4" [ngStyle]="{'border':'1px solid black'}">
+    <p [ngClass]="{'alert':true, 'alert-info':true}">Attribute Directive</p>
+    <p [ngStyle]="{'border':'1px solid red','height':'100px' }">Attribute Directive</p>
+    <h1 [ngStyle]=" {'color':'blue'} " >SARA</h1>
+    </div>
+  <h1>Use My Custom Directive Attaching My Custom Directive here...</h1>
+   -->
+  
+
+  <!-- <div appMagic class="col-md-4" [ngStyle]="{'height' : '300px', 'background':'#e8e8e8'}" > 
+    <div [MyDir]="'#e8e8e8'" class="col-md-4" [ngStyle]="{'height' : '300px', 'background':'#e8e8e8'}">
+    </div>
+  </div> 
+
+
+   
+<h1>Use My Custom Directive Attaching My Custom Directive here...</h1>
+  
+  <input type="text" MyDir >
+-->
+
+
+   
+
+  <!-- <div MyDir class="col-md-4" [ngStyle]="{'height' : '300px', 'background':'#e8e8e8'}" > 
+    <div [MyDir]="'#e8e8e8'" class="col-md-4" [ngStyle]="{'height' : '300px', 'background':'#e8e8e8'}">
+    </div>
+  </div> -->
+
+    <!-- <p *ngIf="showme">Show Me</p>
+   
+    <div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">I am Red</p>
+    <p *ngSwitchCase="'blue'">Blue</p>
+    <p *ngSwitchCase="'green'">Green</p>
+    <p *ngSwitchDefault>Invalid Color</p>
+
+    <h3>Disp Colr array using *ngFor Directive</h3>
+    <ol>
+      <li *ngFor="let c of arrColor ">{{c}}</li>
+     
+    </ol>
+  </div> -->
+   <!-- <div class="sidenav" >
+    <a href="#India"  id="India">India</a>
+    <a href="#Japan" *ngSwitchCase="'Japan'">Japan </a>
+    <a href="#US">US</a>
+    <a href="#England">England</a>
+  </div>  -->
+
+
+   <h1>Display countries Flag</h1>
+     <div class="row">
+      <div class="col-md-6">
+        <ol>
+          <li *ngFor="let con of countries;">
+            <a href="#"  (click)="fun(con.flag)">
+              {{con.country}}
+
+            </a></li>
+        </ol>
+      </div> 
+
+      <div class="col-md-6">
+      
+          <img src="{{cname}}">
+      </div>
+      </div>  
+        
+  
+ <!-- <div class="container" >
+    <div class="row">
+       
+              <nav class="navbar-primary">
+                  <div class="col-md-10">
+              <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+           
+              
+               
+                
+                        <ul class="navbar-primary-menu">
+                          <li *ngFor="let con of countries;">
+                 
+                               <a href="#" (click)="fun(con.flag,con.country)"><span class="glyphicon glyphicon-list-alt"></span>
+                              <span class="nav-label">{{con.country}}</span>
+                              </a>
+                        </li>
+                      </ul>
+                    </div>      
+           
+          </nav>
+          
+     
+        
+          <div class="col-sm-6">
+             <h1>{{cnt}}</h1> 
+          </div>
+          
+            <div class="col-sm-6">
+                <img src="{{cname}}">
+            </div>
+    </div>
+</div>  -->
+
+
+
+    <!-- <div [ngSwitch]="countryName">
+
+        <p *ngSwitchCase="'India'">In India</p>
+        <p *ngSwitchCase="'Japan'">Japan</p>
+        <p *ngSwitchCase="'US'">US</p>
+        <p *ngSwitchCase="'England'">England</p>
+    <div > -->
+
+   <h1>NavBar...</h1>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+     
+     <a class="navbar-brand" href="#">Logo</a>
+   
+ 
+     <ul class="navbar-nav">
+       <li class="nav-item">
+         <a class="nav-link" href="#">Link 1</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Link 2</a>
+       </li>
+   
+        Dropdown 
+       <li class="nav-item dropdown">
+       
+         <a  class="nav-link dropdown-toggle"
+             href="#" id="navbardrop" [attr.data-toggle]="x" (mouseover)="fun1()">
+          Dropdown link
+        </a>
+        
+         <div class="dropdown-menu">
+           <a class="dropdown-item" href="#">Link 1</a>
+           <a class="dropdown-item" href="#">Link 2</a>
+           <a class="dropdown-item" href="#">Link 3</a>
+         </div>
+       </li>
+
+ 
+       
+     </ul>
+   </nav> 
+
+   <p>fhfg{{x}}</p> 
+ 
